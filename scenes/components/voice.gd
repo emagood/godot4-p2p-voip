@@ -89,4 +89,3 @@ func play_data(data: PackedFloat32Array) -> void:
 	var id = client.multiplayer.get_remote_sender_id()
 	_update_player_pool()
 	_get_opus_instance(id).decode_and_play(_get_generator(id), data)
-
